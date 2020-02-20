@@ -197,9 +197,9 @@ def test_examples_in_folder(folderpath):
             ColorPrint.print_pass(CHECK)
         else:
             ColorPrint.print_fail(CROSS)
-            ColorPrint.print_fail(out.decode("utf-8"))
-            ColorPrint.print_fail(err.decode("utf-8"))
             success = 1
+        ColorPrint.print_fail(out.decode("utf-8"))
+        ColorPrint.print_fail(err.decode("utf-8"))
 
 for platform in platforms:
     fqbn = ALL_PLATFORMS[platform]
