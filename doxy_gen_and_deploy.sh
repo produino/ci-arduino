@@ -69,7 +69,7 @@ mkdir code_docs
 cd code_docs
 
 # Get the current gh-pages branch
-git clone -b gh-pages https://github.com/${REPO_SLUG}.git
+git clone -b gh-pages https://${AUTH}@github.com/${REPO_SLUG}.git
 export REPO_NAME=${REPO_SLUG#*/}
 cd ${REPO_NAME}
 
